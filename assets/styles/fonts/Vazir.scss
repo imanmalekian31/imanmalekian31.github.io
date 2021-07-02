@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/vazir/eot/Vazir-Thin.eot');
+  src: url('/fonts/vazir/eot/Vazir-Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/vazir/woff2/Vazir-Thin.woff2') format('woff2'),
+    url('/fonts/vazir/woff/Vazir-Thin.woff') format('woff'),
+    url('/fonts/vazir/ttf/Vazir-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/vazir/eot/Vazir-Light.eot');
+  src: url('/fonts/vazir/eot/Vazir-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/vazir/woff2/Vazir-Light.woff2') format('woff2'),
+    url('/fonts/vazir/woff/Vazir-Light.woff') format('woff'),
+    url('/fonts/vazir/ttf/Vazir-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/vazir/eot/Vazir.eot');
+  src: url('/fonts/vazir/eot/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/vazir/woff2/Vazir.woff2') format('woff2'),
+    url('/fonts/vazir/woff/Vazir.woff') format('woff'),
+    url('/fonts/vazir/ttf/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/vazir/eot/Vazir-Medium.eot');
+  src: url('/fonts/vazir/eot/Vazir-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/vazir/woff2/Vazir-Medium.woff2') format('woff2'),
+    url('/fonts/vazir/woff/Vazir-Medium.woff') format('woff'),
+    url('/fonts/vazir/ttf/Vazir-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/vazir/eot/Vazir-Bold.eot');
+  src: url('/fonts/vazir/eot/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/vazir/woff2/Vazir-Bold.woff2') format('woff2'),
+    url('/fonts/vazir/woff/Vazir-Bold.woff') format('woff'),
+    url('/fonts/vazir/ttf/Vazir-Bold.ttf') format('truetype');
+}
+
+.Vazir {
+  font-family: Vazir, sans-serif !important;
+}
