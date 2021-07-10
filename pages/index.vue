@@ -1,17 +1,6 @@
 <template>
   <div>
-    <section>
-      <v-img :src="imageLink.sub_main" class="landing-image">
-        <v-layout column align-center justify-center fill-height>
-          <h1 class="white--text mb-2">
-            چنار
-          </h1>
-          <v-btn class="blue lighten-2 mt-5" dark large href="/">
-            شروع کنید
-          </v-btn>
-        </v-layout>
-      </v-img>
-    </section>
+    <landing class="mt-2" />
 
     <section>
       <v-layout column wrap class="my-5" align-center>
@@ -119,14 +108,7 @@
               </v-col>
             </div>
           </v-col>
-          <v-col
-            cols="12"
-            xl="6"
-            lg="6"
-            md="6"
-            sm="12"
-            xs="12"
-          >
+          <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12">
             <v-row dense>
               <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
                 <v-card>
@@ -150,45 +132,45 @@
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
   data: () => ({
-    title: 'Endorfine',
+    title: "Endorfine",
     imageLink: {
-      main: require('~/assets/p2.jpg'),
-      sub_main: require('~/assets/p3.jpg')
+      main: require("~/assets/p2.jpg"),
+      sub_main: require("~/assets/p3.jpg")
     },
-    email: '',
+    email: "",
     subscribed: false,
 
     cards: [
       {
-        title: 'صندلی',
-        src: require('~/assets/f1.webp'),
+        title: "صندلی",
+        src: require("~/assets/f1.webp"),
         flex: 6
       },
       {
-        title: 'میز',
-        src: require('~/assets/f5.webp'),
+        title: "میز",
+        src: require("~/assets/f5.webp"),
         flex: 6
       },
       {
-        title: 'کمد',
-        src: require('~/assets/f3.webp'),
+        title: "کمد",
+        src: require("~/assets/f3.webp"),
         flex: 6
       },
       {
-        title: 'تخت خواب',
-        src: require('~/assets/f4.jpg'),
+        title: "تخت خواب",
+        src: require("~/assets/f4.jpg"),
         flex: 6
       }
     ]
   }),
   methods: {
-    subscribe () {
-      this.subscribed = !this.subscribed
+    subscribe() {
+      this.subscribed = !this.subscribed;
     }
   }
-}
+};
 </script>
 
 <style scoped>

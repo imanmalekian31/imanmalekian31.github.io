@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="transparent" fixed app flat>
+    <v-app-bar color="white" app>
       <v-spacer />
       <v-toolbar-title>چنار</v-toolbar-title>
     </v-app-bar>
@@ -29,17 +29,17 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
-      icons: ['mdi-home', 'mdi-email', 'mdi-calendar', 'mdi-delete'],
+      icons: ["mdi-home", "mdi-email", "mdi-calendar", "mdi-delete"],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
-    }
+      title: "Vuetify.js"
+    };
   }
-}
+};
 </script>

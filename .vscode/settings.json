@@ -2,6 +2,8 @@
     "conventionalCommits.scopes": [
         "images",
         "eslint",
-        "packages"
+        "packages",
+        "style",
+        "Add landing part one"
     ]
 }

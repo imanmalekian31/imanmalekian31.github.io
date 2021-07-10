@@ -1,40 +1,40 @@
-import colors from 'vuetify/es5/util/colors';
+import colors from "vuetify/es5/util/colors";
 
 export default {
-  target: 'static',
+  target: "static",
 
   head: {
-    titleTemplate: '%s - chennar',
-    title: 'chennar',
+    titleTemplate: "%s - chennar",
+    title: "chennar",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" },
+      { name: "format-detection", content: "telephone=no" }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
-  css: ['~/assets/styles/main.scss'],
+  css: ["~/assets/styles/main.scss"],
 
-  plugins: [],
+  plugins: ["~/plugins/mixins/images.js"],
 
   components: true,
 
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/vuetify'],
+  buildModules: ["@nuxtjs/eslint-module", "@nuxtjs/vuetify"],
 
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa'],
+  modules: ["@nuxtjs/axios", "@nuxtjs/pwa"],
 
   axios: {},
 
   pwa: {
     manifest: {
-      lang: 'fa'
+      lang: "fa"
     }
   },
 
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ["~/assets/variables.scss"],
     rtl: true,
     theme: {
       themes: {
