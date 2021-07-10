@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "images",
-        "eslint"
+        "eslint",
+        "packages"
     ]
 }
