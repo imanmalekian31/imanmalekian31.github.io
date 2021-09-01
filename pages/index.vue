@@ -12,9 +12,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-center">
-                    <v-icon x-large color="blue">
-                      mdi-cash-multiple
-                    </v-icon>
+                    <v-icon x-large color="blue"> mdi-cash-multiple </v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div>به صرفه</div>
@@ -31,9 +29,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-center">
-                    <v-icon x-large color="blue">
-                      mdi-speedometer
-                    </v-icon>
+                    <v-icon x-large color="blue"> mdi-speedometer </v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div>سریع</div>
@@ -100,9 +96,7 @@
                     gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                     height="608px"
                   >
-                    <h3 class="text-right pr-4 pb-4">
-                      مبل
-                    </h3>
+                    <h3 class="text-right pr-4 pb-4">مبل</h3>
                   </v-img>
                 </v-card>
               </v-col>
@@ -137,7 +131,7 @@ export default {
     title: "Endorfine",
     imageLink: {
       main: require("~/assets/p2.jpg"),
-      sub_main: require("~/assets/p3.jpg")
+      sub_main: require("~/assets/p3.jpg"),
     },
     email: "",
     subscribed: false,
@@ -146,30 +140,30 @@ export default {
       {
         title: "صندلی",
         src: require("~/assets/f1.webp"),
-        flex: 6
+        flex: 6,
       },
       {
         title: "میز",
         src: require("~/assets/f5.webp"),
-        flex: 6
+        flex: 6,
       },
       {
         title: "کمد",
         src: require("~/assets/f3.webp"),
-        flex: 6
+        flex: 6,
       },
       {
         title: "تخت خواب",
         src: require("~/assets/f4.jpg"),
-        flex: 6
-      }
-    ]
+        flex: 6,
+      },
+    ],
   }),
   methods: {
     subscribe() {
       this.subscribed = !this.subscribed;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -1,19 +1,21 @@
 <template>
-  <v-row>
-    <v-col class="text-center">
-      <img
-        src="/v.png"
-        alt="Vuetify.js"
-        class="mb-5"
-      >
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
-    </v-col>
-  </v-row>
+  <VueBottomNavigation :options="options" v-model="selected" />
 </template>
+
+<script>
+import VueBottomNavigation from "bottom-navigation-vue";
+
+export default {
+  components: { VueBottomNavigation },
+  data: () => ({
+    selected: 2,
+    options: [
+      { id: 1, icon: "fas fa-home", title: "Home", badge: 1 },
+      { id: 2, icon: "fas fa-layer-group", title: "Category" },
+      { id: 3, icon: "fas fa-cog", title: "Setting" },
+      { id: 4, icon: "fas fa-user", title: "Account", badge: 15 },
+      { id: 5, icon: "fas fa-bell", title: "Notifcation" },
+    ],
+  }),
+};
+</script>

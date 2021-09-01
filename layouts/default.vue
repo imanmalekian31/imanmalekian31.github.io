@@ -1,13 +1,12 @@
 <template>
   <v-app>
     <v-app-bar color="white" app>
-      <v-spacer />
       <v-toolbar-title>چنار</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <nuxt />
     </v-main>
-    <v-footer padless>
+    <!-- <v-footer padless>
       <v-card flat tile width="100%" class="blue lighten-1 text-center">
         <v-card-text>
           <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
@@ -23,7 +22,7 @@
           {{ new Date().getFullYear() }} — <strong>چنار</strong>
         </v-card-text>
       </v-card>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 
@@ -38,8 +37,8 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Vuetify.js"
+      title: "Vuetify.js",
     };
-  }
+  },
 };
 </script>
