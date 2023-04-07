@@ -4,16 +4,18 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: "14"
       - name: Install dependencies
         run: npm install
       - name: Install slidev
         run: npm i -g @slidev/cli
+      - name: Install for PDF
+        run: npm i -D playwright-chromium
       - name: Build
-        run: slidev build --base imanmalekian31.github.io
+        run: slidev build --base /imanmalekian31.github.io/
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
